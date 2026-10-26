@@ -218,6 +218,21 @@ select {
   text-shadow: 0 0 10px rgba(255,209,102,0.75);
 }
 
+.mini-wrap {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+#minimap {
+  display: block;
+  width: 180px;
+  height: 180px;
+  background: rgba(7, 13, 18, 0.8);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+}
+
 .mission-box {
   bottom: 16px;
   left: 50%;
