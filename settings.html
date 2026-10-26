@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="settings-page">
+  <div class="settings-panel">
+    <h1>Graphics & World Settings</h1>
+
+    <label class="setting-row">
+      <span>Quality</span>
+      <select id="qualitySelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+
+    <label class="setting-row">
+      <span>Traffic Density</span>
+      <select id="trafficSelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+
+    <label class="setting-row">
+      <span>NPC Count</span>
+      <select id="npcSelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+
+    <button id="saveSettingsBtn" class="btn primary">Save Settings</button>
+    <a href="index.html" class="btn">Back</a>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

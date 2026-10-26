@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Vice City V3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="game-body">
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="hud">
+    <div class="panel top-left">
+      <div class="stat-row">
+        <span>Health</span>
+        <span id="healthText">100</span>
+      </div>
+      <div class="bar"><div id="healthBar" class="fill health"></div></div>
+
+      <div class="stat-row">
+        <span>Car</span>
+        <span id="carText">100</span>
+      </div>
+      <div class="bar"><div id="carBar" class="fill car"></div></div>
+
+      <div class="stat-row"><span>Cash</span><span id="cashText">$0</span></div>
+      <div class="stat-row"><span>Wanted</span><span id="wantedText">0</span></div>
+      <div class="stat-row"><span>Weapon</span><span id="weaponText">Pistol</span></div>
+    </div>
+
+    <div class="panel top-right">
+      <div id="wantedStars" class="stars"></div>
+      <div class="stat-row"><span>Zone</span><span id="zoneText">Downtown</span></div>
+      <div class="stat-row"><span>Mission</span><span id="missionText">1</span></div>
+      <div class="stat-row"><span>Interact</span><span id="interactionText">-</span></div>
+    </div>
+
+    <div class="panel mission-box" id="missionBox">
+      Pick up the briefcase by the neon marker.
+    </div>
+
+    <div class="panel cheat-panel hidden" id="cheatConsole">
+      <div class="cheat-header">CHEAT CODE</div>
+      <input id="cheatInput" type="text" autocomplete="off" />
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
